@@ -9,7 +9,7 @@ def main():
     
     client = pymongo.MongoClient(connection_string)
     db = client[db_name]
-    collection = db['people'] #1. put the name of your collection in the quotes
+    collection = db['test'] #1. put the name of your collection in the quotes
     
     #2. add a document to your collection using the insert_one method
     
