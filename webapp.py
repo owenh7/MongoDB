@@ -3,6 +3,9 @@ import os
 import sys
 import pprint
 
+from pymongo import MongoClient
+    client = MongoClient('mongodb://localhost:27017/')
+
 def main():
     connection_string = os.environ["MONGO_CONNECTION_STRING"]
     db_name = os.environ["MONGO_DBNAME"]
