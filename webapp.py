@@ -15,7 +15,9 @@ def main():
     collection = db['test'] #1. put the name of your collection in the quotes
     
     #2. add a document to your collection using the insert_one method
-    
+    doc = {“key1”:“value1”, “key2”:“value2”}
+    collection.insert_one(doc)
+
     #3. print the number of documents in the collection
     
     #4. print the first document in the collection
